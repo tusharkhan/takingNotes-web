@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f4f5;
+  color: #222;
+}
+
+nav {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+}
+
+nav a.active {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.spacer {
+  flex: 1;
+}
+
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 20px 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  margin: 0 0 6px;
+}
+
+.narrow {
+  max-width: 380px;
+  margin: 40px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+form.row {
+  flex-direction: row;
+  margin-bottom: 12px;
+}
+
+form.row input {
+  flex: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button.danger {
+  background: #dc2626;
+  border-color: #dc2626;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.pager {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+.error {
+  color: #dc2626;
+  margin: 0;
+}
+
+.success {
+  color: #16a34a;
+  margin: 0;
+}
+
+small {
+  color: #777;
+}
